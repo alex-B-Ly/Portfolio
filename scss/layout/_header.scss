@@ -4,3 +4,16 @@ header{
 	height: 40%;
 	background: $light-back;
 }
+
+.intro-pic{
+	filter: gray;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	transition: all 1.7s;
+}
+
+.intro-pic:hover{
+	filter: none;
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
