@@ -25,6 +25,13 @@
 .table > tbody > tr > td.tablefix {
   border-bottom: 1px solid #ddd; }
 
+/* Portfolio */
+.portfolio {
+  padding: 50px 0; }
+
+.portfolio-project {
+  border: 1px solid #AFADAD; }
+
 /* LAYOUT files */
 /* NAV */
 /* HEADER */
