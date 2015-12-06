@@ -1,2 +1,23 @@
 /* SECTIONS */
 
+/* alex-intro */
+
+.alex-intro{
+	padding: 50px 0;
+}
+
+.intro-pic{
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width:992px){
+	.intro-pic{
+		float: left;
+		margin-right: 15px;
+	}
+}
+
+/* Skills */
+.table>tbody>tr>td.tablefix{
+	border-bottom: 1px solid #ddd;
+}
