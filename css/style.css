@@ -8,6 +8,10 @@
 /* Fonts */
 /* MIXINS */
 /* BASE */
+body {
+  background: #0B0B0B;
+  color: #3DFB02; }
+
 /* MODULES files */
 /* SECTIONS */
 /* alex-intro */
