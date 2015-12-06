@@ -45,6 +45,17 @@ body {
   display: none;
   transition: all 2s; }
 
+/* Contact */
+.map-item {
+  padding-top: 25px; }
+
+.bucks-map {
+  width: 50%;
+  height: 300px; }
+
+.contact-items {
+  padding: 50px 0; }
+
 /* LAYOUT files */
 /* NAV */
 /* HEADER */
