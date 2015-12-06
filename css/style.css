@@ -40,6 +40,11 @@ body {
 .portfolio-project:hover {
   box-shadow: inset 0 0 10px #EBEAEA; }
 
+/* Repos */
+.repo-title {
+  display: none;
+  transition: all 2s; }
+
 /* LAYOUT files */
 /* NAV */
 /* HEADER */
