@@ -8,6 +8,10 @@
 /* Fonts */
 /* MIXINS */
 /* BASE */
+body {
+  background: #0B0B0B;
+  color: #fff; }
+
 /* MODULES files */
 /* SECTIONS */
 /* alex-intro */
@@ -30,7 +34,11 @@
   padding: 50px 0; }
 
 .portfolio-project {
-  border: 1px solid #AFADAD; }
+  border: 1px solid #AFADAD;
+  transition: all 1.1s; }
+
+.portfolio-project:hover {
+  box-shadow: inset 0 0 10px #EBEAEA; }
 
 /* LAYOUT files */
 /* NAV */
@@ -52,5 +60,9 @@ header {
   -webkit-filter: grayscale(0); }
 
 /* FOOTER */
+footer {
+  height: 120px;
+  background: url("../img/congruent_outline.png");
+  opacity: 0.15; }
 
 /*# sourceMappingURL=style.css.map */
