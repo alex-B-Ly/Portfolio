@@ -6,3 +6,11 @@ body{
 	// This pattern is downloaded from www.subtlepatterns.com 
  // If you need more, that's where to get'em.
 }
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active{
+	text-decoration: none;
+}

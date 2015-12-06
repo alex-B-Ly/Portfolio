@@ -29,11 +29,25 @@
 
 .portfolio-project{
 	@include solid-border('all', 1px, #AFADAD);
+	padding: 20px 0;
 	transition: all 1.1s;
 }
 
 .portfolio-project:hover{
 	box-shadow: inset 0 0 10px #EBEAEA;
+}
+
+.project-title{
+	font-size: 2.3em;
+	color: #EDEDED;
+}
+
+.project-title:hover{
+	color: #fff;
+}
+
+.project-img{
+	margin-top: 10px;
 }
 
 /* Repos */
