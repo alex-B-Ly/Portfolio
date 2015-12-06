@@ -13,6 +13,11 @@
 /* LAYOUT files */
 /* NAV */
 /* HEADER */
+header {
+  padding-top: 70px;
+  height: 500px;
+  background: #D8EFFD; }
+
 /* FOOTER */
 
 /*# sourceMappingURL=style.css.map */
