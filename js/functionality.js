@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 					},
 					error: function(jqXHR, textStatus, errorThrown){
-						alert('did not work');
+						alert('Not available presently.');
 					}
 				});
 

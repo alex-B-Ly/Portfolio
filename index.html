@@ -98,6 +98,24 @@ Jowl capicola beef ribs, doner flank brisket hamburger boudin kielbasa bresaola 
 	</section>
 
 	<!-- Add a skills modal.  When a skill is clicked, the modal appears and gives description of what I can do and have done -->
+	<div id="main-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 	<!-- fixed backgroud image that appears to move when scroll -->
 	<section class="image-divide"></section>
@@ -113,20 +131,30 @@ Jowl capicola beef ribs, doner flank brisket hamburger boudin kielbasa bresaola 
 					<div class="col-xs-12">
 						<a class="project-title" href="http://www.frenchlearnersguide.com">French Learner's Guide</a>
 					</div>
-					<a href="http://www.frenchlearnersguide.com">
-						<img class="project-img" src="img/frenchlearnersguide.jpg" alt="French Learner's Guide picture">
-					</a>
-					<p class="project-description"></p>
+					<div class="col-xs-12">
+						<a href="http://www.frenchlearnersguide.com">
+							<img class="project-img" src="img/frenchlearnersguide.jpg" alt="French Learner's Guide picture">
+						</a>
+					</div>
+					<div class="col-xs-12">
+						<a href="#" class="project-info-trigger" data-toggle="modal" data-target="#main-modal">Info</a>
+						<p class="project-description"></p>
+					</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio-project text-center">
 					<div class="col-xs-12">
 						<a class="project-title" href="http://www.alexly-webdev.com">Alex Ly - Web Dev</a>
 					</div>
-					<a href="http://www.alexly-webdev.com">
-						<img class="project-img" src="" alt="AlexLy-WebDev picture">
-					</a>
-					<p class="project-description"></p>
+					<div class="col-xs-12">
+						<a href="http://www.alexly-webdev.com">
+							<img class="project-img" src="" alt="AlexLy-WebDev picture">
+						</a>
+					</div>
+					<div class="col-xs-12">
+						<a href="#" class="project-info-trigger" data-toggle="modal" data-target="#main-modal">Info</a>
+						<p class="project-description"></p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -169,12 +197,12 @@ Jowl capicola beef ribs, doner flank brisket hamburger boudin kielbasa bresaola 
 				<div class="col-xs-12 text-center">
 					<h2>Contact Me</h2>
 				</div>
+				<div class="col-xs-12 text-center contact-items">
+					<p class="contact-item">email: ABL12582@gmail.com</p>
+					<p class="contact-item">Location: Bucks County Area</p>
+				</div>
 				<div class="col-xs-12 text-center map-item">
 					<iframe class="bucks-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d389317.13265426253!2d-75.10387180000001!3d40.330363300000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c446ceb7670e1f%3A0x9e1be4fefb5ca713!2sBucks+County%2C+PA!5e0!3m2!1sen!2sus!4v1433167669000"></iframe>
-				</div>
-				<div class="col-xs-12 text-center contact-items">
-					<p class="contact-item">Location: Bucks County Area</p>
-					<p class="contact-item">email:</p>
 				</div>
 			</div>
 		</div>
