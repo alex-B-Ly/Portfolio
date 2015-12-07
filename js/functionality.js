@@ -26,7 +26,8 @@ $(document).ready(function() {
 
 				function repoNameBuilder(repoList){
 					var repoCreate = $('<a>');
-					repoCreate.attr('href', repoList.url);
+					var repoCommits = repoList.url += "/commits";
+					repoCreate.attr('href', repoCommits);
 					repoCreate.addClass('col-xs-12').addClass('text-center').addClass('repo-name');
 					repoCreate.text(repoList.name);
 
@@ -57,9 +58,45 @@ $(document).ready(function() {
 		});
 	}
 
+	// REPO INFO TABLE BUILDER
+	function repoInfo(){
+		
+		$('.repo-list').on('click', '.repo-name', function(e) {
+			e.preventDefault();
+			
+			$.ajax({
+				type: 'GET',
+				url: $(this).attr('href'),
+				success: function(info){
+					var tableBody = $('.repo-info-table tbody');
+					tableBody.empty();
+
+					for(var i=0; i<info.length; i++){
+						var repoInfoRow = repoInfoRowBuilder(info[i]);
+						tableBody.append(repoInfoRow);
+					}
+				}
+			});
+
+			function repoInfoRowBuilder(repoItem){
+				var infoRow = $("<tr>");
+				var commitNumTd = $("<td>").text('test');
+				var messageTd = $("<td>").text(repoItem.commit.message);
+				var authorTd = $("<td>").text(repoItem.commit.author.name);
+				var dateTd = $("<td>").text(repoItem.commit.author.date);
+
+				infoRow.append(commitNumTd).append(messageTd).append(authorTd).append(dateTd);
+
+				return infoRow;
+			}
+
+		});
+
+	}
+
 
 	//FUNCTIONS CALLED
 	repoFetch();
 	repoSelect();
-
+	repoInfo();
 });
