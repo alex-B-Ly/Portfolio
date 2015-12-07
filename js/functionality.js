@@ -81,13 +81,12 @@ $(document).ready(function() {
 			});
 
 			function repoInfoRowBuilder(repoItem){
-				var infoRow = $("<tr>");
-				var commitNumTd = $("<td>").text('test');
-				var messageTd = $("<td>").text(repoItem.commit.message);
-				var authorTd = $("<td>").text(repoItem.commit.author.name);
-				var dateTd = $("<td>").text(repoItem.commit.author.date);
+				var infoRow = $('<tr>');
+				var messageTd = $('<td>').text(repoItem.commit.message);
+				var authorTd = $('<td>').text(repoItem.commit.author.name);
+				var dateTd = $('<td>').text(repoItem.commit.author.date);
 
-				infoRow.append(commitNumTd).append(messageTd).append(authorTd).append(dateTd);
+				infoRow.append(messageTd).append(authorTd).append(dateTd);
 
 				return infoRow;
 			}
