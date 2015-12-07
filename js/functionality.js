@@ -75,29 +75,39 @@ $(document).ready(function() {
 
 					for(var i=0; i<info.length; i++){
 						var repoInfoRow = repoInfoRowBuilder(info[i]);
+						repoInfoRow.attr('href', info[i].html_url);
 						tableBody.append(repoInfoRow);
 					}
+
+					function repoInfoRowBuilder(repoItem){
+						var infoRow = $('<tr>');
+						var messageTd = $('<td>').text(repoItem.commit.message);
+						var authorTd = $('<td>').text(repoItem.commit.author.name);
+						var dateTd = $('<td>').text(repoItem.commit.author.date);
+
+						infoRow.append(messageTd).append(authorTd).append(dateTd);
+						infoRow.addClass('repo-info-row');
+
+						return infoRow;
+					}
+
 				}
 			});
-
-			function repoInfoRowBuilder(repoItem){
-				var infoRow = $('<tr>');
-				var messageTd = $('<td>').text(repoItem.commit.message);
-				var authorTd = $('<td>').text(repoItem.commit.author.name);
-				var dateTd = $('<td>').text(repoItem.commit.author.date);
-
-				infoRow.append(messageTd).append(authorTd).append(dateTd);
-
-				return infoRow;
-			}
 
 		});
 
 	}
 
+	// REPO COMMIT RELOCATOR
+	function commitRelocator(){
+		$(document).on('click', '.repo-info-row', function() {
+			window.open($(this).attr('href'), '_blank');
+		});
+	}
 
 	//FUNCTIONS CALLED
 	repoFetch();
 	repoSelect();
 	repoInfo();
+	commitRelocator();
 });
