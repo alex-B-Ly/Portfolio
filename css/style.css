@@ -68,7 +68,8 @@ a:active {
 
 .repo-name {
   background: #424242;
-  padding: 10px 0; }
+  padding: 10px 0;
+  transition: all 1.5s; }
 
 .repo-name:nth-child(even) {
   background: #AEAEAE; }
@@ -78,6 +79,13 @@ a:active {
 
 .hide-repo {
   display: none; }
+
+/* Repo info table */
+.repo-info-table {
+  display: none; }
+
+.repo-info-row {
+  cursor: pointer; }
 
 /* Contact */
 .map-item {

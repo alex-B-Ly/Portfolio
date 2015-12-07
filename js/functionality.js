@@ -50,9 +50,11 @@ $(document).ready(function() {
 			if(!($(this).hasClass('selected-repo'))){
 				$(this).addClass('selected-repo');
 				$(this).siblings().addClass('hide-repo');
+				$('.repo-info-table').fadeIn(2000);
 			}else{
 				$(this).removeClass('selected-repo');
 				$(this).siblings().removeClass('hide-repo');
+				$('.repo-info-table').fadeOut(600);
 			}
 		
 		});
