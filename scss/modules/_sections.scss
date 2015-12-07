@@ -51,9 +51,30 @@
 }
 
 /* Repos */
-.repo-title{
+.repo-title,
+.repo-instructions{
 	display: none;
-	transition: all 2s;
+}
+
+.repo-list{
+	display: none;
+}
+
+.repo-name{
+	background: #424242;
+	padding: 10px 0;
+}
+
+.repo-name:nth-child(even){
+	background: #AEAEAE;
+}
+
+.selected-repo{
+	background: #FA1E1E !important;
+}
+
+.hide-repo{
+	display: none;
 }
 
 /* Contact */
