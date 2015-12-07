@@ -8,10 +8,10 @@ $(document).ready(function() {
 	function repoFetch(){
 		$('#repo-fetch').on('click', function(e) {
 			e.preventDefault();
-			$(this).fadeOut(800, function() {
-				$('.repo-title').fadeIn(2000);
-				$('.repo-instructions').fadeIn(2000);
-				$('.repo-list').fadeIn(3000);
+			$(this).fadeOut(500, function() {
+				$('.repo-title').fadeIn(800);
+				$('.repo-instructions').fadeIn(800);
+				$('.repo-list').fadeIn(1200);
 			});
 		});
 	}
