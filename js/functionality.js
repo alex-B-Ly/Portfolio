@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
+// PORTFOLIO SECTION
 
+	// MODAL INFO
+	function projectInfo(){
+		$('.project-info-trigger').on('click', function(e) {
+			e.preventDefault();
+
+		});
+	}
 
 // REPO SECTION
 
@@ -106,6 +114,7 @@ $(document).ready(function() {
 	}
 
 	//FUNCTIONS CALLED
+	projectInfo();
 	repoFetch();
 	repoSelect();
 	repoInfo();
