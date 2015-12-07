@@ -58,6 +58,17 @@ a:active {
 .project-img {
   margin-top: 10px; }
 
+.project-description {
+  display: none; }
+
+/* Modal */
+.modal-close {
+  color: #02FF20; }
+
+.modal-content {
+  background: #313131;
+  color: #02FF20; }
+
 /* Repos */
 .repo-title,
 .repo-instructions {

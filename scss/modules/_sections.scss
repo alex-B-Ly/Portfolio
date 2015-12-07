@@ -50,6 +50,20 @@
 	margin-top: 10px;
 }
 
+.project-description{
+	display: none;
+}
+
+/* Modal */
+.modal-close{
+	color: $modal-color;
+}
+
+.modal-content{
+	background: $modal-back;
+	color: $modal-color;
+}
+
 /* Repos */
 .repo-title,
 .repo-instructions{
