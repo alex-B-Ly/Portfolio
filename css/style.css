@@ -162,7 +162,11 @@ h2.section-title {
 
 .repo-info-row {
   cursor: pointer;
-  color: #02FF20; }
+  color: #02FF20;
+  transition: all 0.7s; }
+
+.repo-info-row:hover {
+  background: #181818; }
 
 /* Contact */
 .map-item {

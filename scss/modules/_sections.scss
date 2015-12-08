@@ -165,6 +165,11 @@
 .repo-info-row{
 	cursor: pointer;
 	color: $modal-color;
+	transition: all 0.7s;
+}
+
+.repo-info-row:hover{
+	background: lighten($dark-back, 5%);
 }
 
 /* Contact */
