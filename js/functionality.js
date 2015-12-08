@@ -7,10 +7,11 @@ $(document).ready(function() {
 		$('.project-info-trigger').on('click', function(e) {
 			e.preventDefault();
 
-			$('.modal-header').text($(this).parent().first().siblings().find('.project-title').text());
+			$('.modal-main-title').text($(this).parent().first().siblings().find('.project-title').text());
 			$('.modal-created-title').text($(this).siblings('.project-description').find('.created-title').text());
 			$('.modal-created-tech').text($(this).siblings('.project-description').find('.created-tech').text());
 			$('.modal-proj-descript').text($(this).siblings('.project-description').find('.description-p').text());
+
 		});
 	}
 

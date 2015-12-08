@@ -19,6 +19,10 @@ a:visited,
 a:active {
   text-decoration: none; }
 
+h2.section-title {
+  font-size: 2.2em;
+  margin: 50px 0 35px 0; }
+
 /* MODULES files */
 /* SECTIONS */
 /* alex-intro */
@@ -48,6 +52,9 @@ a:active {
 .portfolio-project:hover {
   box-shadow: inset 0 0 10px #EBEAEA; }
 
+@media screen and (max-width: 992px) {
+  .portfolio-project {
+    margin-bottom: 20px; } }
 .project-title {
   font-size: 2.3em;
   color: #EDEDED; }
@@ -56,7 +63,20 @@ a:active {
   color: #fff; }
 
 .project-img {
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 25px; }
+
+.project-info-trigger {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 8px 60px;
+  transition: all 1s; }
+
+.project-info-trigger:hover {
+  border: 2px solid #A1FEFD;
+  color: #A1FEFD; }
 
 .project-description {
   display: none; }
@@ -70,23 +90,52 @@ a:active {
   color: #02FF20; }
 
 /* Repos */
+#repo-fetch {
+  border: 3px solid #fff;
+  padding: 15px;
+  font-size: 1.4em;
+  color: #fff;
+  transition: color 2s, background 1s, border 3s; }
+
+#repo-fetch:hover {
+  border: 3px solid #02FF20;
+  color: #02FF20;
+  background: #0B0B0B; }
+
 .repo-title,
 .repo-instructions {
   display: none; }
+
+.repo-title {
+  margin-top: 0; }
 
 .repo-list {
   display: none; }
 
 .repo-name {
-  background: #424242;
+  background: #0B0B0B;
+  color: #02FF20;
+  font-size: 1.5em;
   padding: 10px 0;
   transition: all 1.5s; }
 
+.repo-name:hover {
+  color: #02FF20;
+  background: black; }
+
 .repo-name:nth-child(even) {
-  background: #AEAEAE; }
+  background: #1f1f1f; }
+
+.repo-name:nth-child(even):hover {
+  color: #35ff4d;
+  background: #181818; }
 
 .selected-repo {
-  background: #FA1E1E !important; }
+  border-top: 3px solid #3346FF;
+  border-bottom: 3px solid #3346FF;
+  background: #000 !important;
+  font-size: 1.7em;
+  color: #8a95ff !important; }
 
 .hide-repo {
   display: none; }
@@ -96,7 +145,8 @@ a:active {
   display: none; }
 
 .repo-info-row {
-  cursor: pointer; }
+  cursor: pointer;
+  color: #02FF20; }
 
 /* Contact */
 .map-item {
@@ -104,11 +154,15 @@ a:active {
 
 .bucks-map {
   width: 50%;
-  height: 300px; }
+  height: 300px;
+  margin-bottom: 30px; }
 
 .contact-items {
-  padding: 50px 0; }
+  font-size: 1.4em; }
 
+@media screen and (max-width: 992px) {
+  .bucks-map {
+    width: 90%; } }
 /* LAYOUT files */
 /* NAV */
 /* HEADER */
