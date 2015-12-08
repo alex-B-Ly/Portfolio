@@ -36,11 +36,16 @@ h2.section-title {
 .alex-intro {
   padding: 50px 0; }
 
-.intro-pic {
+.intro-pic,
+.intro-pic-color {
   margin-bottom: 20px; }
 
 @media screen and (min-width: 992px) {
   .intro-pic {
+    float: left;
+    margin-right: 15px; }
+
+  .intro-pic-color {
     float: left;
     margin-right: 15px; } }
 .intro-description {
@@ -184,14 +189,18 @@ header {
 
 .intro-pic {
   filter: gray;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
   transition: all 1.7s; }
 
-.intro-pic:hover {
+.intro-pic-color {
   filter: none;
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0); }
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  transition: all 1.7s; }
 
 /* FOOTER */
 footer {

@@ -6,12 +6,18 @@
 	padding: 50px 0;
 }
 
-.intro-pic{
+.intro-pic,
+.intro-pic-color{
 	margin-bottom: 20px;
 }
 
 @media screen and (min-width:992px){
 	.intro-pic{
+		float: left;
+		margin-right: 15px;
+	}
+
+	.intro-pic-color{
 		float: left;
 		margin-right: 15px;
 	}
